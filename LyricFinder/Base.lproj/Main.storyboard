@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="LyricFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JF7-Ox-la3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5IR-ov-hIV">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1n-m5-Boa" customClass="UIViewWithRoundedTopCornerRadius" customModule="LyricFinder" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="537.5" width="414" height="358.5"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Artist Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z5E-wh-tks" customClass="UITextViewRoundedBorder" customModule="LyricFinder" customModuleProvider="target">
+                                                        <rect key="frame" x="24" y="60" width="366" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="QaC-Qq-c4y"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Song Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Znd-jy-4TN" customClass="UITextViewRoundedBorder" customModule="LyricFinder" customModuleProvider="target">
+                                                        <rect key="frame" x="24" y="135" width="366" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="iuw-i6-mXn"/>
+                                                        </constraints>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNQ-SZ-Vfh" customClass="ButtonWithRadius" customModule="LyricFinder" customModuleProvider="target">
+                                                        <rect key="frame" x="30" y="215" width="354" height="50"/>
+                                                        <color key="backgroundColor" red="0.18039215689999999" green="0.24313725489999999" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="bqb-wf-gsJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="  Find Song">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <imageReference key="image" image="magnifyingglass" catalog="system" symbolScale="large"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.94901960784313721" green="0.9137254901960784" blue="0.89411764705882346" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="JNQ-SZ-Vfh" firstAttribute="top" secondItem="Znd-jy-4TN" secondAttribute="bottom" constant="30" id="2SF-rn-05Z"/>
+                                                    <constraint firstItem="Znd-jy-4TN" firstAttribute="top" secondItem="z5E-wh-tks" secondAttribute="bottom" constant="25" id="5XY-8B-1tJ"/>
+                                                    <constraint firstItem="Znd-jy-4TN" firstAttribute="height" secondItem="z5E-wh-tks" secondAttribute="height" id="6OE-qT-3BW"/>
+                                                    <constraint firstAttribute="trailing" secondItem="z5E-wh-tks" secondAttribute="trailing" constant="24" id="NnT-4s-DjX"/>
+                                                    <constraint firstItem="Znd-jy-4TN" firstAttribute="leading" secondItem="z5E-wh-tks" secondAttribute="leading" id="OV4-uD-Gwk"/>
+                                                    <constraint firstItem="JNQ-SZ-Vfh" firstAttribute="leading" secondItem="d1n-m5-Boa" secondAttribute="leading" constant="30" id="YyA-Vh-lDW"/>
+                                                    <constraint firstItem="Znd-jy-4TN" firstAttribute="trailing" secondItem="z5E-wh-tks" secondAttribute="trailing" id="c16-UD-i6V"/>
+                                                    <constraint firstItem="z5E-wh-tks" firstAttribute="leading" secondItem="d1n-m5-Boa" secondAttribute="leading" constant="24" id="cFW-eb-CVe"/>
+                                                    <constraint firstItem="z5E-wh-tks" firstAttribute="top" secondItem="d1n-m5-Boa" secondAttribute="top" constant="60" id="eMB-P6-F9a"/>
+                                                    <constraint firstAttribute="trailing" secondItem="JNQ-SZ-Vfh" secondAttribute="trailing" constant="30" id="yhV-qY-mJg"/>
+                                                </constraints>
+                                            </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="song_icon" translatesAutoresizingMaskIntoConstraints="NO" id="7s1-yY-yhV">
+                                                <rect key="frame" x="167" y="80" width="80" height="80"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="ICc-hQ-cRc"/>
+                                                    <constraint firstAttribute="height" constant="80" id="v0K-vx-FGg"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which song do you want to sing along ?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WIP-gh-a50">
+                                                <rect key="frame" x="24" y="230" width="366" height="85"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="31"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.29019607843137252" green="0.30588235294117649" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="d1n-m5-Boa" firstAttribute="height" secondItem="5IR-ov-hIV" secondAttribute="height" multiplier="0.4" id="MA6-j6-NzB"/>
+                                            <constraint firstItem="7s1-yY-yhV" firstAttribute="top" secondItem="5IR-ov-hIV" secondAttribute="top" constant="80" id="QxJ-Hv-3iP"/>
+                                            <constraint firstItem="7s1-yY-yhV" firstAttribute="centerX" secondItem="5IR-ov-hIV" secondAttribute="centerX" id="WJc-Dx-y4E"/>
+                                            <constraint firstItem="d1n-m5-Boa" firstAttribute="leading" secondItem="5IR-ov-hIV" secondAttribute="leading" id="Zej-eV-ncM"/>
+                                            <constraint firstItem="WIP-gh-a50" firstAttribute="top" secondItem="7s1-yY-yhV" secondAttribute="bottom" constant="70" id="iZq-PG-1ki"/>
+                                            <constraint firstAttribute="trailing" secondItem="d1n-m5-Boa" secondAttribute="trailing" id="kWU-aW-b3k"/>
+                                            <constraint firstAttribute="bottom" secondItem="d1n-m5-Boa" secondAttribute="bottom" id="qEg-vx-scL"/>
+                                            <constraint firstAttribute="trailing" secondItem="WIP-gh-a50" secondAttribute="trailing" constant="24" id="qLJ-Ow-qwD"/>
+                                            <constraint firstItem="WIP-gh-a50" firstAttribute="leading" secondItem="5IR-ov-hIV" secondAttribute="leading" constant="24" id="zpw-KZ-SzJ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5IR-ov-hIV" secondAttribute="trailing" id="Jvr-mj-rgS"/>
+                                    <constraint firstItem="5IR-ov-hIV" firstAttribute="height" secondItem="JF7-Ox-la3" secondAttribute="height" id="U8t-Kf-vxD"/>
+                                    <constraint firstItem="5IR-ov-hIV" firstAttribute="leading" secondItem="JF7-Ox-la3" secondAttribute="leading" id="VOG-Ux-KBn"/>
+                                    <constraint firstItem="5IR-ov-hIV" firstAttribute="top" secondItem="JF7-Ox-la3" secondAttribute="top" id="epo-RP-nc7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JF7-Ox-la3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q4S-1G-ty9"/>
+                            <constraint firstItem="JF7-Ox-la3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="s0N-er-A8U"/>
+                            <constraint firstAttribute="bottom" secondItem="JF7-Ox-la3" secondAttribute="bottom" id="uXB-0C-Tze"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JF7-Ox-la3" secondAttribute="trailing" id="yR6-FC-cfO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistNameTxtField" destination="z5E-wh-tks" id="8lT-0h-R3s"/>
+                        <outlet property="songTitleTxtField" destination="Znd-jy-4TN" id="pcr-MY-XJl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="89"/>
+        </scene>
+        <!--Lyrics View Controller-->
+        <scene sceneID="bSF-VJ-w3A">
+            <objects>
+                <viewController storyboardIdentifier="LyricsViewController" id="SDT-6U-yOA" customClass="LyricsViewController" customModule="LyricFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ok8-fY-thw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2W3-92-h0c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title: Lead Me Gently O Father" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqP-CV-Kdk">
+                                        <rect key="frame" x="24" y="145" width="366" height="64.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" editable="NO" text="--" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="djC-nr-pAo">
+                                        <rect key="frame" x="24" y="233.5" width="366" height="647.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="djC-nr-pAo" secondAttribute="bottom" constant="15" id="Sp2-qG-xW2"/>
+                                    <constraint firstItem="pqP-CV-Kdk" firstAttribute="leading" secondItem="2W3-92-h0c" secondAttribute="leading" constant="24" id="dgB-8G-HiS"/>
+                                    <constraint firstAttribute="trailing" secondItem="pqP-CV-Kdk" secondAttribute="trailing" constant="24" id="fFz-C6-Sa6"/>
+                                    <constraint firstItem="djC-nr-pAo" firstAttribute="top" secondItem="pqP-CV-Kdk" secondAttribute="bottom" constant="24" id="ist-8T-NwE"/>
+                                    <constraint firstItem="djC-nr-pAo" firstAttribute="leading" secondItem="2W3-92-h0c" secondAttribute="leading" constant="24" id="nT0-ZC-OTL"/>
+                                    <constraint firstAttribute="trailing" secondItem="djC-nr-pAo" secondAttribute="trailing" constant="24" id="y0s-0D-I6y"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJy-lD-QKh" customClass="RoundedButton" customModule="LyricFinder" customModuleProvider="target">
+                                <rect key="frame" x="20" y="50" width="70" height="70"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.23137254901960785" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="671-Ox-viQ"/>
+                                    <constraint firstAttribute="width" constant="70" id="vzv-40-5WY"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageReference key="image" image="delete.left.fill" catalog="system" symbolScale="large" renderingMode="template"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gYP-qE-x8e"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OJy-lD-QKh" firstAttribute="top" secondItem="ok8-fY-thw" secondAttribute="top" constant="50" id="7nt-wy-mjS"/>
+                            <constraint firstAttribute="bottom" secondItem="2W3-92-h0c" secondAttribute="bottom" id="CIg-0T-mq5"/>
+                            <constraint firstItem="gYP-qE-x8e" firstAttribute="trailing" secondItem="2W3-92-h0c" secondAttribute="trailing" id="CNF-qP-r2Z"/>
+                            <constraint firstItem="2W3-92-h0c" firstAttribute="top" secondItem="ok8-fY-thw" secondAttribute="top" id="JWb-Hf-YKn"/>
+                            <constraint firstItem="2W3-92-h0c" firstAttribute="leading" secondItem="gYP-qE-x8e" secondAttribute="leading" id="UIu-1g-cmI"/>
+                            <constraint firstItem="OJy-lD-QKh" firstAttribute="leading" secondItem="gYP-qE-x8e" secondAttribute="leading" constant="20" id="UPA-rd-HO0"/>
+                            <constraint firstItem="pqP-CV-Kdk" firstAttribute="top" secondItem="OJy-lD-QKh" secondAttribute="bottom" constant="25" id="ruC-Mk-CPw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xy2-IN-KFJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831.88405797101461" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="OJy-lD-QKh">
+            <size key="intrinsicContentSize" width="26.5" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="delete.left.fill" catalog="system" width="128" height="104"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="song_icon" width="64" height="64"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
