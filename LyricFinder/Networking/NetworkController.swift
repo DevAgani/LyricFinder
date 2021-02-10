@@ -15,6 +15,12 @@ public struct Lyrics: Codable {
     var lyrics: String
 }
 
+public struct Song: Codable {
+    var lyrics: String
+    var artist: String
+    var name: String
+}
+
 public enum NetworkServiceError: Error {
     case invalidRequest(String)
     case invalidURL(String)

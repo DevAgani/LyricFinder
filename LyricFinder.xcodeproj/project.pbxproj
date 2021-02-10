@@ -24,6 +24,10 @@
 		67D4B8FA25D3EC3F0046DFE7 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B8F925D3EC3F0046DFE7 /* NetworkController.swift */; };
 		67D4B90225D3ED110046DFE7 /* OvhNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B90125D3ED110046DFE7 /* OvhNetworkService.swift */; };
 		67D4B90725D3F5E70046DFE7 /* LyricFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B90625D3F5E70046DFE7 /* LyricFinder.swift */; };
+		67D4B91425D3F9F40046DFE7 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B91325D3F9F40046DFE7 /* Coordinator.swift */; };
+		67D4B91C25D3FA850046DFE7 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B91B25D3FA850046DFE7 /* Storyboarded.swift */; };
+		67D4B92125D3FCFF0046DFE7 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D4B92025D3FCFF0046DFE7 /* MainCoordinator.swift */; };
+		67EC633125D418050073CF62 /* LyricsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EC633025D418050073CF62 /* LyricsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		67D4B8F925D3EC3F0046DFE7 /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 		67D4B90125D3ED110046DFE7 /* OvhNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvhNetworkService.swift; sourceTree = "<group>"; };
 		67D4B90625D3F5E70046DFE7 /* LyricFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricFinder.swift; sourceTree = "<group>"; };
+		67D4B91325D3F9F40046DFE7 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Coordinator.swift; path = ../../../../../../../Coordinator.swift; sourceTree = "<group>"; };
+		67D4B91B25D3FA850046DFE7 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Storyboarded.swift; path = ../../../../../../../Storyboarded.swift; sourceTree = "<group>"; };
+		67D4B92025D3FCFF0046DFE7 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainCoordinator.swift; path = ../../../../../../../MainCoordinator.swift; sourceTree = "<group>"; };
+		67EC633025D418050073CF62 /* LyricsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LyricsCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,17 +125,15 @@
 		67BDA33A25D38D9C003CB1C0 /* LyricFinder */ = {
 			isa = PBXGroup;
 			children = (
+				67D4B91225D3F9D20046DFE7 /* Coordinators */,
+				67D4B90E25D3F8AE0046DFE7 /* Delegates */,
 				67D4B8F825D3E9EE0046DFE7 /* Networking */,
 				67BDA39125D3AC8B003CB1C0 /* Constants */,
 				67BDA38B25D3AA5E003CB1C0 /* Extensions */,
 				67BDA37325D395E2003CB1C0 /* ViewControllers */,
 				67BDA37225D395D6003CB1C0 /* Storyboards */,
 				67BDA37125D395CE003CB1C0 /* Views */,
-				67BDA33B25D38D9C003CB1C0 /* AppDelegate.swift */,
-				67BDA33D25D38D9C003CB1C0 /* SceneDelegate.swift */,
-				67BDA34125D38D9C003CB1C0 /* Main.storyboard */,
 				67BDA34425D38D9D003CB1C0 /* Assets.xcassets */,
-				67BDA34625D38D9D003CB1C0 /* LaunchScreen.storyboard */,
 				67BDA34925D38D9D003CB1C0 /* Info.plist */,
 			);
 			path = LyricFinder;
@@ -154,6 +160,7 @@
 		67BDA37125D395CE003CB1C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				67BE12DE25D40F7200071109 /* TextView */,
 				67BDA38225D3A90C003CB1C0 /* Container */,
 				67BDA37425D395ED003CB1C0 /* Buttons */,
 			);
@@ -163,6 +170,8 @@
 		67BDA37225D395D6003CB1C0 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				67BDA34625D38D9D003CB1C0 /* LaunchScreen.storyboard */,
+				67BDA34125D38D9C003CB1C0 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -181,7 +190,6 @@
 			children = (
 				67BDA37525D3960F003CB1C0 /* RoundedButton.swift */,
 				67BDA37D25D39955003CB1C0 /* ButtonWithRadius.swift */,
-				67BDA39A25D3D96B003CB1C0 /* UITextViewRoundedBorder.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -210,6 +218,14 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		67BE12DE25D40F7200071109 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				67BDA39A25D3D96B003CB1C0 /* UITextViewRoundedBorder.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
 		67D4B8F825D3E9EE0046DFE7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +233,26 @@
 				67D4B90125D3ED110046DFE7 /* OvhNetworkService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		67D4B90E25D3F8AE0046DFE7 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				67BDA33D25D38D9C003CB1C0 /* SceneDelegate.swift */,
+				67BDA33B25D38D9C003CB1C0 /* AppDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		67D4B91225D3F9D20046DFE7 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				67D4B91325D3F9F40046DFE7 /* Coordinator.swift */,
+				67D4B91B25D3FA850046DFE7 /* Storyboarded.swift */,
+				67D4B92025D3FCFF0046DFE7 /* MainCoordinator.swift */,
+				67EC633025D418050073CF62 /* LyricsCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +388,7 @@
 			files = (
 				67D4B8FA25D3EC3F0046DFE7 /* NetworkController.swift in Sources */,
 				67BDA38425D3A92E003CB1C0 /* UIViewWithRadius.swift in Sources */,
+				67D4B91425D3F9F40046DFE7 /* Coordinator.swift in Sources */,
 				67BDA34025D38D9C003CB1C0 /* MainViewController.swift in Sources */,
 				67BDA33C25D38D9C003CB1C0 /* AppDelegate.swift in Sources */,
 				67BDA33E25D38D9C003CB1C0 /* SceneDelegate.swift in Sources */,
@@ -361,7 +398,10 @@
 				67BDA37625D3960F003CB1C0 /* RoundedButton.swift in Sources */,
 				67BDA39325D3AC9B003CB1C0 /* Constants.swift in Sources */,
 				67D4B90225D3ED110046DFE7 /* OvhNetworkService.swift in Sources */,
+				67EC633125D418050073CF62 /* LyricsCoordinator.swift in Sources */,
 				67BDA39B25D3D96B003CB1C0 /* UITextViewRoundedBorder.swift in Sources */,
+				67D4B92125D3FCFF0046DFE7 /* MainCoordinator.swift in Sources */,
+				67D4B91C25D3FA850046DFE7 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

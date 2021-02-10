@@ -29,7 +29,7 @@ class UIViewWithBackgroundRadius : UIViewWithRadius {
         let shapeLayer = CAShapeLayer()
         shapeLayer.bounds = bounds
         shapeLayer.position = CGPoint(x: bounds.width / 2, y: bounds.height / 2)
-        shapeLayer.fillColor = UIColor(hex: Constants.shared.isabelline)?.cgColor
+        shapeLayer.fillColor = UIColor(hex: Constants.shared.isabellineColor)?.cgColor
         shapeLayer.lineWidth = 1
         
         shapeLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: 10).cgPath
